@@ -11,8 +11,13 @@
   </head>
 
   <body>
+    <div class="navbar">
+      <h2>Task List</h2>
+      <%= link_to "See All Lists", lists_path %> | <%= link_to "Create New Task List", new_list_path %>
+    </div>
 
-    <%= link_to "See All Lists", lists_path %> | <%= link_to "Create New Task List", new_list_path %> 
-    <%= yield %>
+    <div class="center">
+      <%= yield %>
+    </div>
   </body>
 </html>

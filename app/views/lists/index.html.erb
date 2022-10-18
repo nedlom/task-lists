@@ -1,5 +1,5 @@
 <% @lists.each do |l| %>
   <div class="list-links">
-    <%= l.name %>
+    <%= link_to l.name, list_path(l) %>
   </div>
 <% end %>
