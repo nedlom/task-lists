@@ -7,3 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 List.create(name: "Groceries")
+Task.create([{content: "Bread", list_id: 6}, {content: "Milk", list_id: 6}, {content: "Eggs", list_id: 6}])

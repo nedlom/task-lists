@@ -6,15 +6,30 @@ class ListsController < ApplicationController
 
   def show
     @list = List.find(params[:id])
+    @tasks = @list.tasks
   end
   
   def new
-    @list = List.new
+    
+    if params[:list_id]
+      @list = List.find(params[:list_id])
+      @task = Task.new
+    else 
+      @list = List.new
+    end
+ 
   end
 
   def create
-    List.create(list_params)
-    redirect_to lists_path
+    @list = List.new(list_params)
+    
+    if @list.save
+      redirect_to list_path(@list)
+    else
+      # flash.alert = list.errors.full_messages[0]
+      
+      redirect_to new_list_path, alert: @list.errors.full_messages[0]
+    end
   end
 
   def edit

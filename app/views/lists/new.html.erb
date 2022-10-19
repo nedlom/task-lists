@@ -1,4 +1,11 @@
+<% flash.each do |type, msg| %>
+  <div class="flash">
+    <%= msg %>
+  </div>
+<% end %>
+
+List form
 <%= form_with model: @list do |form| %>
   <%= form.text_field :name %>
-  <%= form.submit %>
+  <%= form.submit "Create List" %>
 <% end %>
