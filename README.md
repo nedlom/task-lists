@@ -5,7 +5,6 @@ Simple to-do list application. A user can create named lists and add tasks to th
 * Rails 6
 
 ## Setup
-## Installation
 1. Clone this repo
 2. Run `bundle install`
 3. Run `rails db:migrate`
