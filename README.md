@@ -1,24 +1,13 @@
-# README
+# Task-Lists
+Simple to-do list application. A user can create named lists and add tasks to those lists.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Technologies
+* Rails 6
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Setup
+## Installation
+1. Clone this repo
+2. Run `bundle install`
+3. Run `rails db:migrate`
+4. Run `rails s`
+5. Navigate to http://localhost:3000
