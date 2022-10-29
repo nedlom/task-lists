@@ -1,7 +1,7 @@
 <h2 class="inline"><%= @list.name %></h2> - <%= @list.created_on %>
 <% @tasks.each do |task| %>
   <div>
-    <%= task.content %>
+    <%= link_to task.content, task_path(task) %>
   </div>
 <% end %>
 <br>

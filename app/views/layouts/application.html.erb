@@ -11,10 +11,14 @@
   </head>
 
   <body>
+    <h1>Task List</h1>
     <div class="navbar">
-      <h2>Task List</h2>
-      <%= link_to "See All Lists", lists_path %> | <%= link_to "Create New List", new_list_path %>
-    </div>
+      <ul class="links">
+        <li><%= link_to "See All Lists", lists_path %></li> 
+        <li><%= link_to "Create New List", new_list_path %></li>
+      </ul>
+    </div
+    
 
     <div class="center">
       <%= yield %>

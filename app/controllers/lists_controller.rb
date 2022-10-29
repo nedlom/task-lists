@@ -10,7 +10,6 @@ class ListsController < ApplicationController
   end
   
   def new
-    
     if params[:list_id]
       @list = List.find(params[:list_id])
       @task = Task.new

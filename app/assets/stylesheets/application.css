@@ -14,14 +14,22 @@
  *= require_self
  */
 
- body {
+body {
   font-family: Arial, sans-serif;
+  text-align: center;
 }
 
- .navbar {
+.navbar {
   text-align: center;
- }
+}
 
+.links {
+  display: table;
+  margin: 0 auto;
+}
+
+
+/* 
  .center {
   margin-top: 20px;
   text-align: center;
@@ -33,4 +41,5 @@
 
  .inline { 
   display: inline;
- }
+ } 
+*/ 
